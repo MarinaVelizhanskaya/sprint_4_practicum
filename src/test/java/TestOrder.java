@@ -52,10 +52,7 @@ public class TestOrder {
         Assert.assertTrue(objOrderPage.checkPopUpSuccessfulOrder());
     }
 
-    @After
-    public void teardown() {
-        driver.quit();
-    }
+    
 
     @Test
     public void orderDownPage() {
@@ -71,7 +68,7 @@ public class TestOrder {
     }
 
     @After
-    public void teardownPage() {
+    public void teardown() {
        driver.quit();
     }
 

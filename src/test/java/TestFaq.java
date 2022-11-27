@@ -29,13 +29,8 @@ public class TestFaq {
         assertEquals(expected, actual);
 
     }
-    @After
-    public void tearDownOne() {
-        driver.quit();
-    }
-
-
-    @Test
+   
+   @Test
     public void checkFaqTwo() {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
@@ -49,10 +44,7 @@ public class TestFaq {
         assertEquals(expected, actual);
 
     }
-    @After
-    public void tearDownTwo() {
-        driver.quit();
-    }
+    
 
     @Test
     public void checkFaqThree() {
@@ -68,10 +60,7 @@ public class TestFaq {
         assertEquals(expected, actual);
 
     }
-    @After
-    public void tearDownThree() {
-        driver.quit();
-    }
+   
 
     @Test
     public void checkFaqFour() {
@@ -87,10 +76,7 @@ public class TestFaq {
         assertEquals(expected, actual);
 
     }
-    @After
-    public void tearDownFour() {
-        driver.quit();
-    }
+    
 
     @Test
     public void checkFaqFive() {
@@ -106,10 +92,7 @@ public class TestFaq {
         assertEquals(expected, actual);
 
     }
-    @After
-    public void tearDownFive() {
-        driver.quit();
-    }
+    
 
     @Test
     public void checkFaqSix() {
@@ -125,10 +108,7 @@ public class TestFaq {
         assertEquals(expected, actual);
 
     }
-    @After
-    public void tearDownSix() {
-        driver.quit();
-    }
+    
 
     @Test
     public void checkFaqSeven() {
@@ -144,10 +124,7 @@ public class TestFaq {
         assertEquals(expected, actual);
 
     }
-    @After
-    public void tearDownSeven() {
-        driver.quit();
-    }
+    
 
     @Test
     public void checkFaqEight() {
@@ -164,7 +141,7 @@ public class TestFaq {
 
     }
     @After
-    public void tearDownEight() {
+    public void tearDown() {
         driver.quit();
     }
 }
